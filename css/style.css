@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+} 
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/* START SLIDER */
+
+.slider__item {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.slider__item-title {
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    left: 30px;
+    top: 190px;
+}
+
+.slick-dots li {
+    margin: 0 9px;
+    width: auto;
+    height: auto;
+}
+
+.slick-dots li button {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(98, 98, 98, .5);
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+    background-color: coral;
+}
+
+.slick-dots li button:before {
+    display: none;
+}
+
+/* END SLIDER */
+
+/* START FLOWERS GALLERY */
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    padding: 70px;
+    color: chocolate;
+}
+
+.flowers__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box-wrapper {
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.box {
+    height: 200px;
+    width: 250px;
+    background-position: center;
+    background-size: cover;
+    transition: all 3s;
+}
+
+.box:hover {
+    transform: scale(2);
+}
+
+/* END FLOWERS GALLERY */
